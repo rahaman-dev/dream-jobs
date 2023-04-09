@@ -1,0 +1,21 @@
+.home {
+  color: red;
+}
+.flex {
+  display: flex;
+  padding: 100px;
+}
+.titleHome {
+  font-size: 80px;
+  color: #d79fc7;
+}
+.btn {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.center {
+  font-size: 30px;
+  text-align: center;
+}
