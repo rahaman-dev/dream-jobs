@@ -1,7 +1,7 @@
 import React from "react";
 import "./job.css";
 import { Link } from "react-router-dom";
-import jobDetails from "../jobDetails/jobDetails";
+// import jobDetails from "../jobDetails/jobDetails";
 import JobDel from "../JobDel/JobDel";
 
 const Job = ({ job }) => {
@@ -9,10 +9,10 @@ const Job = ({ job }) => {
     salary,
     companyLogo,
     companyName,
-    phone,
-    email,
     address,
     jobTitle,
+    phone,
+    email,
     jobDescription,
     jobResponsibilities,
     educationRequirements,

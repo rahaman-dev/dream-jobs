@@ -10,12 +10,16 @@ const AppliedJobs = () => {
     }
   }, []);
 
-  // if (local.length === 0) {
-  //   console.log("please add i item");
+  // let getTitleFromLocalStorage = localStorage.getItem("details");
+  // console.log(getTitleFromLocalStorage);
+  // let message;
+  // if (getTitleFromLocalStorage == null) {
+  //   message = <h2>please apply a job</h2>;
   // }
 
   return (
     <div>
+      {/* {local.length <= 1 ? "Please apply a job" : ""} */}
       {local.map((loca, idx) => (
         <Loca key={idx} loca={loca}></Loca>
       ))}

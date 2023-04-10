@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Del = ({ del }) => {
   const [details, setDetails] = useState([]);
@@ -26,10 +28,12 @@ const Del = ({ del }) => {
       updatedDetails = [...priviusDetails, del];
       localStorage.setItem("details", JSON.stringify(updatedDetails));
       setDetails(updatedDetails);
+      toast("Wow fine! & go to Applied Jobs page");
     } else {
       updatedDetails = [del];
       localStorage.setItem("details", JSON.stringify(updatedDetails));
       setDetails(updatedDetails);
+      toast("Wow fine! & go to Applied Jobs page");
     }
   };
 
@@ -135,6 +139,7 @@ const Del = ({ del }) => {
           </button>
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

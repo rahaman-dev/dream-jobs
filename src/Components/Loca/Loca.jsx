@@ -6,18 +6,24 @@ const Loca = ({ loca }) => {
     salary,
     companyLogo,
     companyName,
+    address,
+    jobTitle,
+    _id,
     phone,
     email,
-    address,
     jobDetails,
     jobDescription,
     jobResponsibilities,
     educationRequirements,
     jobExperiences,
     jobTime,
-    jobTitle,
-    _id,
   } = loca;
+
+  // let message;
+  // if (cart.length === 0) {
+  //   message = <h2>please add a product</h2>;
+  // }
+
   return (
     <>
       <div
