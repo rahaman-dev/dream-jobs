@@ -7,6 +7,11 @@ import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 
 const Home = () => {
   const catagory = useLoaderData();
+
+  const handleViewDetailsBtn = (_id) => {
+    console.log(_id);
+  };
+
   return (
     <>
       <div className="flex">
@@ -23,7 +28,6 @@ const Home = () => {
           <button className="btn">Get Started</button>
         </div>
         <div className="right">
-          {/* <img src="https://picsum.photos/500/500" alt="" /> */}
           <img
             src="sonod.jpg"
             alt=""
@@ -45,7 +49,7 @@ const Home = () => {
           <CatagoryCart key={idx} cart={cart}></CatagoryCart>
         ))}
       </div>
-      <FeaturedJobs></FeaturedJobs>
+      <FeaturedJobs handleViewDetailsBtn={handleViewDetailsBtn}></FeaturedJobs>
     </>
   );
 };

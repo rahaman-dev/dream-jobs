@@ -1,5 +1,8 @@
 import React from "react";
 import "./job.css";
+import { Link } from "react-router-dom";
+import jobDetails from "../jobDetails/jobDetails";
+import JobDel from "../JobDel/JobDel";
 
 const Job = ({ job }) => {
   const {
@@ -14,12 +17,14 @@ const Job = ({ job }) => {
     jobResponsibilities,
     educationRequirements,
     jobExperiences,
+    jobTime,
+    _id,
   } = job;
   return (
     <div className="containerJob">
       <img src={companyLogo} alt="" />
       <h2>{jobTitle}</h2>
-      <h5>{companyName}</h5>
+      <h4>{companyName}</h4>
       <div className="flexJob">
         <div
           style={{
@@ -76,7 +81,21 @@ const Job = ({ job }) => {
           {salary}
         </div>
       </div>
-      <button className="btn">Job Details</button>
+      {/* <button onClick={() => handleViewDetailsBtn(_id)} className="btn">
+        View Details
+      </button> */}
+      <p
+        style={{
+          width: "100px",
+          backgroundColor: "yellow",
+          padding: "8px",
+          borderRadius: "10px",
+        }}
+      >
+        <Link to={`/job/${job._id}`} style={{ textDecoration: "none" }}>
+          View Details
+        </Link>
+      </p>
     </div>
   );
 };

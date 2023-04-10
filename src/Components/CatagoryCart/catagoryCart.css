@@ -2,12 +2,11 @@
   width: 300px;
   margin: 20px;
   padding: 20px;
-  background-color: #a4b0ff63;
+  background-color: #dee3ff63;
   line-height: 40px;
   border-radius: 10px;
 }
 .icon {
-  width: 70px;
+  width: 80px;
   background-color: rgba(214, 213, 213, 0.356);
-  padding: 20px;
 }

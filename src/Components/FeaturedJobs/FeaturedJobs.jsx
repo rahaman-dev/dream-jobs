@@ -2,14 +2,22 @@ import React, { useState, useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 import Job from "../Job/Job";
 import "./FeaturedJobs.css";
+import JobDel from "../JobDel/JobDel";
 
-const FeaturedJobs = () => {
+const FeaturedJobs = ({ handleViewDetailsBtn }) => {
   const [jobs, setJobs] = useState([]);
   useEffect(() => {
     fetch("job.json")
       .then((res) => res.json())
       .then((data) => setJobs(data));
   }, []);
+
+  // const handleSeeMoreBtn = () => {
+  //   console.log("net nai");
+  //   {
+  //     jobs.slice(0, 14).map((job, idx) => <Job key={idx} job={job}></Job>);
+  //   }
+  // };
 
   return (
     <div style={{ margin: "50px 0" }}>
@@ -19,9 +27,21 @@ const FeaturedJobs = () => {
         need. Its your future
       </p>
       <div className="gird">
-        {jobs.map((job, idx) => (
+        {/* {jobs.map((job, idx) => (
           <Job key={idx} job={job}></Job>
+        ))} */}
+        {jobs.slice(0, 4).map((job, idx) => (
+          <Job
+            key={idx}
+            job={job}
+            handleViewDetailsBtn={handleViewDetailsBtn}
+          ></Job>
         ))}
+      </div>
+      <div style={{ textAlign: "center" }}>
+        <button onClick={() => handleSeeMoreBtn(jobs)} className="btn center">
+          See More
+        </button>
       </div>
     </div>
   );
