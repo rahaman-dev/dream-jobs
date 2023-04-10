@@ -81,9 +81,6 @@ const Job = ({ job }) => {
           {salary}
         </div>
       </div>
-      {/* <button onClick={() => handleViewDetailsBtn(_id)} className="btn">
-        View Details
-      </button> */}
       <p
         style={{
           width: "100px",

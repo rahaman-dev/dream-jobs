@@ -1,27 +1,34 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
+import Del from "../Del/Del";
 
 const JobDel = () => {
   const dynamic = useParams();
   const [jobDel, setJobDel] = useState([]);
+
   useEffect(() => {
     fetch("/job.json")
       .then((res) => res.json())
       .then((data) => setJobDel(data));
   }, []);
 
-  const job = jobDel.find((job) => job._id === dynamic._id);
-  console.log(job);
+  // let del = jobDel && jobDel.find((job) => job._id === dynamic._id);
+  let dels = jobDel && jobDel?.filter((job) => job._id === dynamic._id);
+  // console.log(del);
+
   return (
-    <div>
-      <h2>job title</h2>
-      <img src={job.companyLogo} alt="" />
-      <h2>{job.address}</h2>
-      <h2>{job.companyName}</h2>
-      <h2>{job.educationRequirements}</h2>
-      <h2>{job.email}</h2>
-      <h2>{job.jobDescription}</h2>
-    </div>
+    <>
+      {dels.map((del, idx) => (
+        <Del key={idx} del={del}></Del>
+      ))}
+
+      {/* <img src={del.companyLogo} alt="" />
+      <h2>{del.address}</h2>
+      <h2>{del.companyName}</h2>
+      <h2>{del.educationRequirements}</h2>
+      <h2>{del.email}</h2>
+      <h2>{del.jobDescription}</h2> */}
+    </>
   );
 };
 

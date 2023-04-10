@@ -45,9 +45,10 @@ const Home = () => {
         </p>
       </div>
       <div style={{ display: "flex" }}>
-        {catagory.map((cart, idx) => (
-          <CatagoryCart key={idx} cart={cart}></CatagoryCart>
-        ))}
+        {catagory &&
+          catagory.map((cart, idx) => (
+            <CatagoryCart key={idx} cart={cart}></CatagoryCart>
+          ))}
       </div>
       <FeaturedJobs handleViewDetailsBtn={handleViewDetailsBtn}></FeaturedJobs>
     </>
