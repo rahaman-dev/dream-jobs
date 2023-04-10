@@ -10,21 +10,21 @@
     "_id": "643300c19114ae5c2d7b5f2f",
     "index": 1,
     "icon": "https://i.postimg.cc/zBCZ7fKc/business-1.png",
-    "companyName": "Creative Design",
+    "companyName": "Web Developer",
     "jobTitle": "100+ Jobs Available"
   },
   {
     "_id": "643300c105e00c1c68bb4132",
     "index": 2,
     "icon": "https://i.postimg.cc/4NLCBqHs/chip-1.png",
-    "companyName": "Marketing & Sales",
+    "companyName": "Frond End Developer",
     "jobTitle": "150 Jobs Available"
   },
   {
     "_id": "643300c1e92af936edb1dcb3",
     "index": 3,
     "icon": "https://i.postimg.cc/jdC3d5CY/Frame-1.png",
-    "companyName": "Engineering Job",
+    "companyName": "Beck End Developer",
     "jobTitle": "224 Jobs Available"
   }
 ]

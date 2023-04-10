@@ -10,6 +10,10 @@ const AppliedJobs = () => {
     }
   }, []);
 
+  // if (local.length === 0) {
+  //   console.log("please add i item");
+  // }
+
   return (
     <div>
       {local.map((loca, idx) => (

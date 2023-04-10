@@ -84,12 +84,15 @@ const Job = ({ job }) => {
       <p
         style={{
           width: "100px",
-          backgroundColor: "yellow",
+          backgroundColor: "rgb(218, 218, 218)",
           padding: "8px",
           borderRadius: "10px",
         }}
       >
-        <Link to={`/job/${job._id}`} style={{ textDecoration: "none" }}>
+        <Link
+          to={`/job/${job._id}`}
+          style={{ textDecoration: "none", color: "rgb(133, 75, 0)" }}
+        >
           View Details
         </Link>
       </p>

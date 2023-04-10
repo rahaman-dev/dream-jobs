@@ -9,7 +9,7 @@ const Home = () => {
   const catagory = useLoaderData();
 
   const handleViewDetailsBtn = (_id) => {
-    console.log(_id);
+    // console.log(_id);
   };
 
   return (
