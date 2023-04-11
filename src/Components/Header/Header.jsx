@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Heaser.css";
+import ActiveLink from "../ActiveLink/ActiveLink";
 
 const Header = () => {
   return (
@@ -13,10 +14,23 @@ const Header = () => {
           </Link>
         </div>
         <div className="links">
-          <Link to="/">Home</Link>
-          <Link to="statisics">Statistics</Link>
-          <Link to="appliedjobs">Applied Jobs</Link>
-          <Link to="blog">Blog</Link>
+          <ul style={{ display: "flex", listStyle: "none" }}>
+            {/* <ActiveLink to="/">Home</ActiveLink> */}
+            <li>
+              <ActiveLink to="/">Home</ActiveLink>
+            </li>
+            <li>
+              <ActiveLink to="statisics">Statistics</ActiveLink>
+            </li>
+            <li>
+              {" "}
+              <ActiveLink to="appliedjobs">Applied Jobs</ActiveLink>
+            </li>
+            <li>
+              {" "}
+              <ActiveLink to="blog">Blog</ActiveLink>
+            </li>
+          </ul>
         </div>
         <div className="btn">
           <button>Star Applying</button>

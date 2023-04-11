@@ -1,0 +1,31 @@
+.delContainer {
+  display: flex;
+  margin: 70px;
+}
+.fontWidthAfterConteiner {
+  width: 700px;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 35px;
+  border-radius: 10px;
+}
+.rightContiner {
+  width: 500px;
+  background-color: #d2ebfc;
+  padding: 10px;
+  font-size: 22px;
+  line-height: 45px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 900px) {
+  .delContainer {
+    display: block;
+    margin: 10px;
+  }
+  .fontWidthAfterConteiner {
+    width: 500px;
+  }
+  .rightContiner {
+    width: 450px;
+  }
+}

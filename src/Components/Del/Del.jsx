@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./Del.css";
 
 const Del = ({ del }) => {
   const [details, setDetails] = useState([]);
@@ -42,16 +43,8 @@ const Del = ({ del }) => {
       <div style={{ textAlign: "center", margin: "30px" }}>
         <img src={companyLogo} alt="" />
       </div>
-      <div style={{ display: "flex", margin: "70px" }}>
-        <div
-          style={{
-            width: "700px",
-            padding: "10px",
-            fontSize: "20px",
-            lineHeight: "35px",
-            borderRadius: "10px",
-          }}
-        >
+      <div className="delContainer">
+        <div className="fontWidthAfterConteiner">
           <p>
             <b>Job Description:</b> {jobDescription}
           </p>
@@ -63,15 +56,7 @@ const Del = ({ del }) => {
           <h5>Experiences</h5>
           <p>{jobExperiences}</p>
         </div>
-        <div
-          style={{
-            backgroundColor: "#7E90FE",
-            padding: "10px",
-            fontSize: "22px",
-            lineHeight: "45px",
-            borderRadius: "10px",
-          }}
-        >
+        <div className="rightContiner">
           <b>
             <p>Job Details</p>
           </b>

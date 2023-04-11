@@ -1,0 +1,7 @@
+.active {
+  color: #fff;
+  background-color: rgb(110, 110, 110);
+}
+a.active {
+  padding: 15px;
+}

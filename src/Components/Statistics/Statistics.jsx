@@ -55,6 +55,7 @@ const Statistics = () => {
   return (
     <div>
       <AreaChart
+        className="recha-wrapper"
         width={1300}
         height={500}
         data={data}

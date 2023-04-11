@@ -6,18 +6,22 @@ import JobDel from "../JobDel/JobDel";
 
 const FeaturedJobs = ({ handleViewDetailsBtn }) => {
   const [jobs, setJobs] = useState([]);
+  const [slices, setSlices] = useState(false);
   useEffect(() => {
     fetch("job.json")
       .then((res) => res.json())
       .then((data) => setJobs(data));
   }, []);
 
-  // const handleSeeMoreBtn = () => {
-  //   console.log("net nai");
-  //   {
-  //     jobs.slice(0, 14).map((job, idx) => <Job key={idx} job={job}></Job>);
-  //   }
-  // };
+  const handleSeeMoreBtn = () => {
+    console.log("clicked");
+    <div>
+      {jobs.slice(4, 15).map((job, idx) => (
+        <Job key={idx} job={job}></Job>
+      ))}
+    </div>;
+    setSlices(true);
+  };
 
   return (
     <div style={{ margin: "50px 0" }}>
@@ -27,9 +31,6 @@ const FeaturedJobs = ({ handleViewDetailsBtn }) => {
         need. Its your future
       </p>
       <div className="gird">
-        {/* {jobs.map((job, idx) => (
-          <Job key={idx} job={job}></Job>
-        ))} */}
         {jobs.slice(0, 4).map((job, idx) => (
           <Job
             key={idx}

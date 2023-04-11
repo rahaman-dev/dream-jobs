@@ -3,7 +3,7 @@ import "./Blog.css";
 
 const Blog = () => {
   return (
-    <div style={{ margin: "90px" }}>
+    <div className="blogsMargin">
       <h2 className="qus">when should you context API?</h2>
       <p className="ans">
         Context is primarily used when some data needs to be accessible by many

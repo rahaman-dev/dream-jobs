@@ -1,0 +1,33 @@
+.locacalContainer {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9ff;
+  margin: 30px 100px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.locacalContainerTow {
+  display: flex;
+  align-items: center;
+}
+.logoLocal {
+  width: 200px;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 900px) {
+  .locacalContainer {
+    display: block;
+    width: 450px;
+    height: auto;
+    margin: 10px;
+  }
+  .locacalContainerTow {
+    display: block;
+  }
+  .logoLocal {
+    width: 70px;
+  }
+}

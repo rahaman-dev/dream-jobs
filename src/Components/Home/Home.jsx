@@ -28,11 +28,7 @@ const Home = () => {
           <button className="btn">Get Started</button>
         </div>
         <div className="right">
-          <img
-            src="sonod.jpg"
-            alt=""
-            style={{ width: " 500px", height: "500px" }}
-          />
+          <img src="sonod.jpg" alt="" className="imagesHome" />
         </div>
       </div>
       <div style={{ margin: "50px 0" }}>
@@ -44,7 +40,7 @@ const Home = () => {
           need. Its your future
         </p>
       </div>
-      <div style={{ display: "flex" }}>
+      <div className="catagoryFlex">
         {catagory &&
           catagory.map((cart, idx) => (
             <CatagoryCart key={idx} cart={cart}></CatagoryCart>
