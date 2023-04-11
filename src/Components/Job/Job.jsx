@@ -11,6 +11,8 @@ const Job = ({ job }) => {
     companyName,
     address,
     jobTitle,
+    poistion1,
+    poistion2,
     phone,
     email,
     jobDescription,
@@ -24,7 +26,29 @@ const Job = ({ job }) => {
     <div className="containerJob">
       <img src={companyLogo} alt="" />
       <h2>{jobTitle}</h2>
-      <h4>{companyName}</h4>
+      <h4 style={{ marginBottom: "20px" }}>{companyName}</h4>
+      <span
+        style={{
+          fontSize: "20px",
+          marginRight: "5px",
+          padding: "10px",
+          borderRadius: "8px",
+          backgroundColor: "#d0d0d8",
+        }}
+      >
+        {poistion1}
+      </span>
+      <span
+        style={{
+          fontSize: "20px",
+          marginRight: "5px",
+          padding: "10px",
+          borderRadius: "8px",
+          backgroundColor: "#9b9bef",
+        }}
+      >
+        {poistion2}
+      </span>
       <div className="flexJob">
         <div
           style={{
@@ -91,7 +115,7 @@ const Job = ({ job }) => {
       >
         <Link
           to={`/job/${job._id}`}
-          style={{ textDecoration: "none", color: "rgb(133, 75, 0)" }}
+          style={{ textDecoration: "none", color: "black" }}
         >
           View Details
         </Link>

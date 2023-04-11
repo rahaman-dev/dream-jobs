@@ -1,6 +1,8 @@
 [
   {
     "_id": "6432d68ccde5b590aafe36b9",
+    "poistion1": "remote",
+    "poistion2": "full time",
     "index": 0,
     "isActive": true,
     "salary": "$1,588.83",
@@ -24,6 +26,8 @@
   },
   {
     "_id": "6432d68c7f92ff288b48d874",
+    "poistion1": "on Site",
+    "poistion2": "full time",
     "index": 1,
     "isActive": true,
     "salary": "$2,274.87",
@@ -47,6 +51,8 @@
   },
   {
     "_id": "6432d68c71d1668bcd3968c7",
+    "poistion1": "remote",
+    "poistion2": "full time",
     "index": 2,
     "isActive": true,
     "salary": "$3,554.21",
@@ -70,6 +76,8 @@
   },
   {
     "_id": "6432d68c45a1711ad86259f1",
+    "poistion1": "on Site",
+    "poistion2": "full time",
     "index": 3,
     "isActive": true,
     "salary": "$4,003.21",
@@ -93,6 +101,8 @@
   },
   {
     "_id": "6432d68cfc326473ca2afc84",
+    "poistion1": "remote",
+    "poistion2": "full time",
     "index": 4,
     "isActive": false,
     "salary": "$5,581.34",
@@ -116,6 +126,8 @@
   },
   {
     "_id": "6432d68ce432502813f0bae1",
+    "poistion1": "on Site",
+    "poistion2": "full time",
     "index": 5,
     "isActive": false,
     "salary": "$4,746.33",
@@ -139,6 +151,8 @@
   },
   {
     "_id": "6432d68cf3ca9cdf031a626f",
+    "poistion1": "remote",
+    "poistion2": "full time",
     "index": 6,
     "isActive": true,
     "salary": "$5,035.66",
@@ -162,6 +176,8 @@
   },
   {
     "_id": "6432d68c0bdc4b2afc78f2ce",
+    "poistion1": "on Site",
+    "poistion2": "full time",
     "index": 7,
     "isActive": true,
     "salary": "$6,040.64",
@@ -185,6 +201,8 @@
   },
   {
     "_id": "6432d68ccfbae62619851f1a",
+    "poistion1": "remote",
+    "poistion2": "full time",
     "index": 8,
     "isActive": true,
     "salary": "$2,488.29",
@@ -208,6 +226,8 @@
   },
   {
     "_id": "6432d68c8dcd317268846540",
+    "poistion1": "on Site",
+    "poistion2": "full time",
     "index": 9,
     "isActive": false,
     "salary": "$7,875.95",
@@ -231,6 +251,8 @@
   },
   {
     "_id": "6432d68c656497242813fc84",
+    "poistion1": "remote",
+    "poistion2": "full time",
     "index": 10,
     "isActive": false,
     "salary": "$8,017.03",
@@ -254,6 +276,8 @@
   },
   {
     "_id": "6432d68c0c47925d2cad1cb6",
+    "poistion1": "on Site",
+    "poistion2": "full time",
     "index": 11,
     "isActive": true,
     "salary": "$9,018.14",
@@ -277,6 +301,8 @@
   },
   {
     "_id": "6432d68c0fa90000d5facaae",
+    "poistion1": "remote",
+    "poistion2": "full time",
     "index": 12,
     "isActive": true,
     "salary": "$10,935.63",
@@ -300,6 +326,8 @@
   },
   {
     "_id": "6432d68cc52e7eb338f1e945",
+    "poistion1": "on Site",
+    "poistion2": "full time",
     "index": 13,
     "isActive": true,
     "salary": "$20,412.72",
@@ -323,6 +351,8 @@
   },
   {
     "_id": "6432d68ce51742901f0e0c42",
+    "poistion1": "remote",
+    "poistion2": "full time",
     "index": 14,
     "isActive": true,
     "salary": "$13,417.02",

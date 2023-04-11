@@ -8,4 +8,5 @@
 .flexJob {
   display: flex;
   gap: 20px;
+  margin: 10px 0;
 }

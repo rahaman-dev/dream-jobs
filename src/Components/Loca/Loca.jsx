@@ -10,6 +10,8 @@ const Loca = ({ loca }) => {
     address,
     jobTitle,
     _id,
+    poistion1,
+    poistion2,
     phone,
     email,
     jobDetails,
@@ -35,6 +37,32 @@ const Loca = ({ loca }) => {
           <div style={{ lineHeight: "30px" }}>
             <h1>{jobTitle}</h1>
             <p>{companyName}</p>
+
+            <p style={{ margin: "10px 0" }}>
+              <span
+                style={{
+                  fontSize: "20px",
+                  marginRight: "5px",
+                  padding: "10px",
+                  borderRadius: "8px",
+                  backgroundColor: "#d0d0d8",
+                }}
+              >
+                {poistion1}
+              </span>
+              <span
+                style={{
+                  fontSize: "20px",
+                  marginRight: "5px",
+                  padding: "10px",
+                  borderRadius: "8px",
+                  backgroundColor: "#9b9bef",
+                }}
+              >
+                {poistion2}
+              </span>
+            </p>
+
             <span>{address}</span>
             <span>{salary}</span>
           </div>
@@ -42,8 +70,8 @@ const Loca = ({ loca }) => {
         <div>
           <p
             style={{
-              width: "100px",
-              backgroundColor: "yellow",
+              fontSize: "20px",
+              backgroundColor: "#d0d0d8",
               padding: "8px",
               borderRadius: "10px",
             }}
