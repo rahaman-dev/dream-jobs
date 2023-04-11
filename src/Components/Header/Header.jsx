@@ -7,7 +7,10 @@ const Header = () => {
     <>
       <div className="header">
         <div className="logo">
-          <h2>Jobs</h2>
+          <Link to="/">
+            {" "}
+            <h2>Dream Jobs</h2>
+          </Link>
         </div>
         <div className="links">
           <Link to="/">Home</Link>
