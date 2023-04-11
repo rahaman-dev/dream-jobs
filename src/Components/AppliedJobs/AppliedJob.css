@@ -1,3 +1,11 @@
+.textRightPadding {
+  text-align: right;
+  padding: 0 100px;
+}
+
 @media only screen and (max-width: 900px) {
-    
+  .textRightPadding {
+    padding: 0;
+    margin-right: 22px;
+  }
 }

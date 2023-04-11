@@ -30,11 +30,7 @@ const Loca = ({ loca }) => {
       <div className="locacalContainer">
         <div className="locacalContainerTow">
           <div>
-            <img
-              src={companyLogo}
-              alt=""
-              className="logoLocal"
-            />
+            <img src={companyLogo} alt="" className="logoLocal" />
           </div>
           <div style={{ lineHeight: "30px" }}>
             <h1>{jobTitle}</h1>

@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Loca from "../Loca/Loca";
+import "./AppliedJob.css";
 
 const AppliedJobs = () => {
   const [local, setLocal] = useState([]);
+  const [selectedOption, setSelectedOption] = useState("");
+
   useEffect(() => {
     let getTitleFromLocalStorage = JSON.parse(localStorage.getItem("details"));
     if (getTitleFromLocalStorage) {
@@ -17,9 +20,30 @@ const AppliedJobs = () => {
   //   message = <h2>please apply a job</h2>;
   // }
 
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+    console.log(selectedOption);
+  };
+
   return (
     <div>
-      {/* {local.length <= 1 ? "Please apply a job" : ""} */}
+      <div className="textRightPadding">
+        <select
+          style={{ width: "120px", height: "25px", marginTop: "20px" }}
+          id="select-option"
+          value={selectedOption}
+          onChange={handleOptionChange}
+        >
+          <optgroup style={{ fontSize: "17px" }} label="Filter By">
+            <option value="Remote" style={{ fontSize: "17px" }}>
+              Remote
+            </option>
+            <option value="onSite" style={{ fontSize: "17px" }}>
+              On Site
+            </option>
+          </optgroup>
+        </select>
+      </div>
       {local.map((loca, idx) => (
         <Loca key={idx} loca={loca}></Loca>
       ))}
