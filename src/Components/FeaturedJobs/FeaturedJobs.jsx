@@ -8,7 +8,7 @@ const FeaturedJobs = ({ handleViewDetailsBtn }) => {
   const [jobs, setJobs] = useState([]);
   const [slices, setSlices] = useState(false);
   useEffect(() => {
-    fetch("job.json")
+    fetch("/job.json")
       .then((res) => res.json())
       .then((data) => setJobs(data));
   }, []);

@@ -7,16 +7,17 @@ const AppliedJobs = () => {
   const [selectedOption, setSelectedOption] = useState("");
 
   useEffect(() => {
-    let getTitleFromLocalStorage = JSON.parse(localStorage.getItem("details"));
-    if (getTitleFromLocalStorage) {
-      setLocal(getTitleFromLocalStorage);
+    let getJobFromLocalStorage = JSON.parse(localStorage.getItem("details"));
+    if (getJobFromLocalStorage) {
+      setLocal(getJobFromLocalStorage);
+      setSelectedOption(getJobFromLocalStorage);
     }
   }, []);
 
-  // let getTitleFromLocalStorage = localStorage.getItem("details");
-  // console.log(getTitleFromLocalStorage);
+  // let getJobFromLocalStorage = localStorage.getItem("details");
+  // console.log(getJobFromLocalStorage);
   // let message;
-  // if (getTitleFromLocalStorage == null) {
+  // if (getJobFromLocalStorage == null) {
   //   message = <h2>please apply a job</h2>;
   // }
 
