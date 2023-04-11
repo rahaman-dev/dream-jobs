@@ -14,13 +14,7 @@ const JobDel = () => {
 
   let dels = jobDel && jobDel?.filter((job) => job._id === dynamic._id);
 
-  return (
-    <>
-      {dels.map((del, idx) => (
-        <Del key={idx} del={del}></Del>
-      ))}
-    </>
-  );
+  return <>{dels && dels.map((del, idx) => <Del key={idx} del={del}></Del>)}</>;
 };
 
 export default JobDel;

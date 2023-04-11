@@ -20,7 +20,7 @@ const AppliedJobs = () => {
   //   message = <h2>please apply a job</h2>;
   // }
 
-  const handleOptionChange = (event) => {
+  const handleFilterSelection = (event) => {
     setSelectedOption(event.target.value);
     console.log(selectedOption);
   };
@@ -32,7 +32,7 @@ const AppliedJobs = () => {
           style={{ width: "120px", height: "25px", marginTop: "20px" }}
           id="select-option"
           value={selectedOption}
-          onChange={handleOptionChange}
+          onChange={handleFilterSelection}
         >
           <optgroup style={{ fontSize: "17px" }} label="Filter By">
             <option value="Remote" style={{ fontSize: "17px" }}>
@@ -44,9 +44,7 @@ const AppliedJobs = () => {
           </optgroup>
         </select>
       </div>
-      {local.map((loca, idx) => (
-        <Loca key={idx} loca={loca}></Loca>
-      ))}
+      {local && local.map((loca, idx) => <Loca key={idx} loca={loca}></Loca>)}
     </div>
   );
 };
