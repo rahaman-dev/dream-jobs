@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 import Job from "../Job/Job";
 import "./FeaturedJobs.css";
-import JobDel from "../JobDel/JobDel";
 
-const FeaturedJobs = ({ handleViewDetailsBtn }) => {
+const FeaturedJobs = () => {
   const [jobs, setJobs] = useState([]);
   const [slices, setSlices] = useState(false);
   useEffect(() => {
@@ -32,11 +31,7 @@ const FeaturedJobs = ({ handleViewDetailsBtn }) => {
       </p>
       <div className="gird">
         {jobs.slice(0, 4).map((job, idx) => (
-          <Job
-            key={idx}
-            job={job}
-            handleViewDetailsBtn={handleViewDetailsBtn}
-          ></Job>
+          <Job key={idx} job={job}></Job>
         ))}
       </div>
       <div style={{ textAlign: "center" }}>

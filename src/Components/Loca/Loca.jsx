@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Loca.css";
 
 const Loca = ({ loca }) => {
@@ -12,20 +12,7 @@ const Loca = ({ loca }) => {
     _id,
     poistion1,
     poistion2,
-    phone,
-    email,
-    jobDetails,
-    jobDescription,
-    jobResponsibilities,
-    educationRequirements,
-    jobExperiences,
-    jobTime,
   } = loca;
-
-  // let message;
-  // if (cart.length === 0) {
-  //   message = <h2>please add a product</h2>;
-  // }
 
   return (
     <>

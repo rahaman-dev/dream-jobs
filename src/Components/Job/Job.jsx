@@ -1,8 +1,6 @@
 import React from "react";
 import "./job.css";
 import { Link } from "react-router-dom";
-// import jobDetails from "../jobDetails/jobDetails";
-import JobDel from "../JobDel/JobDel";
 
 const Job = ({ job }) => {
   const {
@@ -13,14 +11,6 @@ const Job = ({ job }) => {
     jobTitle,
     poistion1,
     poistion2,
-    phone,
-    email,
-    jobDescription,
-    jobResponsibilities,
-    educationRequirements,
-    jobExperiences,
-    jobTime,
-    _id,
   } = job;
   return (
     <div className="containerJob">

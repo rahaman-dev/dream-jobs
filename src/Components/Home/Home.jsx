@@ -1,16 +1,12 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import "./Home.css";
-import Catagory from "../Catagory/Catagory";
+
 import CatagoryCart from "../CatagoryCart/CatagoryCart";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 
 const Home = () => {
   const catagory = useLoaderData();
-
-  const handleViewDetailsBtn = (_id) => {
-    // console.log(_id);
-  };
 
   return (
     <>
@@ -46,7 +42,7 @@ const Home = () => {
             <CatagoryCart key={idx} cart={cart}></CatagoryCart>
           ))}
       </div>
-      <FeaturedJobs handleViewDetailsBtn={handleViewDetailsBtn}></FeaturedJobs>
+      <FeaturedJobs></FeaturedJobs>
     </>
   );
 };
