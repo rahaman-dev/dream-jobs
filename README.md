@@ -6,38 +6,27 @@ https://bucolic-fenglisu-90fc2b.netlify.app/
 
 https://github.com/Porgramming-Hero-web-course/b7a9-career-hub-rs-rahaman
 
-### Header
+### Menu
 
-- first time crated a header component
-- Second bullet point
-- Third bullet point
+- I have created a dynamic route using activeLinks in the menu components. and responsive the menu on mobile,
+  t
 
 ### Job Category List
 
-- first time crated a header component
-- Second bullet point
-- Third bullet point
+- I created a json file and showed the data from the json file.
 
 ### Featured Jobs
 
-- first time crated a header component
-- Second bullet point
-- Third bullet point
+- I have created a JSON file and shown the data from the JSON file. And I have shown 4 data by using map and useState.
 
 ### Statistics
 
-- first time crated a header component
-- Second bullet point
-- Third bullet point
+- just crated a areChart with install ReCahrt from <a href="https://recharts.org/">rechart.org</a>
 
 ### Applied Jobs
 
-- first time crated a header component
-- Second bullet point
-- Third bullet point
+- Fetching data from local storage. Shown its port UI in dynamic route. when apply any job then show a react <a href="https://www.npmjs.com/package/react-toastify">tosfify</a> form npm site
 
 ### Job Details page
 
-- first time crated a header component
-- Second bullet point
-- Third bullet point
+- Using useParam, useEffect, use filter the ED and show the data in the UI for each id.
