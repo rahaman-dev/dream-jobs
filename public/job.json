@@ -26,7 +26,7 @@
   },
   {
     "_id": "6432d68c7f92ff288b48d874",
-    "poistion1": "on Site",
+    "poistion1": "onSite",
     "poistion2": "full time",
     "index": 1,
     "isActive": true,
@@ -76,7 +76,7 @@
   },
   {
     "_id": "6432d68c45a1711ad86259f1",
-    "poistion1": "on Site",
+    "poistion1": "onSite",
     "poistion2": "full time",
     "index": 3,
     "isActive": true,
@@ -126,7 +126,7 @@
   },
   {
     "_id": "6432d68ce432502813f0bae1",
-    "poistion1": "on Site",
+    "poistion1": "onSite",
     "poistion2": "full time",
     "index": 5,
     "isActive": false,
@@ -176,7 +176,7 @@
   },
   {
     "_id": "6432d68c0bdc4b2afc78f2ce",
-    "poistion1": "on Site",
+    "poistion1": "onSite",
     "poistion2": "full time",
     "index": 7,
     "isActive": true,
@@ -226,7 +226,7 @@
   },
   {
     "_id": "6432d68c8dcd317268846540",
-    "poistion1": "on Site",
+    "poistion1": "onSite",
     "poistion2": "full time",
     "index": 9,
     "isActive": false,
@@ -276,7 +276,7 @@
   },
   {
     "_id": "6432d68c0c47925d2cad1cb6",
-    "poistion1": "on Site",
+    "poistion1": "onSite",
     "poistion2": "full time",
     "index": 11,
     "isActive": true,
@@ -326,7 +326,7 @@
   },
   {
     "_id": "6432d68cc52e7eb338f1e945",
-    "poistion1": "on Site",
+    "poistion1": "onSite",
     "poistion2": "full time",
     "index": 13,
     "isActive": true,

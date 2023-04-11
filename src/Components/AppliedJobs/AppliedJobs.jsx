@@ -4,46 +4,44 @@ import "./AppliedJob.css";
 
 const AppliedJobs = () => {
   const [local, setLocal] = useState([]);
-  const [selectedOption, setSelectedOption] = useState("");
+  const [buttonValue, setButtonValue] = useState("");
+  const [buttonValueTow, setButtonValueTow] = useState("");
 
   useEffect(() => {
     let getJobFromLocalStorage = JSON.parse(localStorage.getItem("details"));
     if (getJobFromLocalStorage) {
       setLocal(getJobFromLocalStorage);
-      setSelectedOption(getJobFromLocalStorage);
     }
   }, []);
 
-  // let getJobFromLocalStorage = localStorage.getItem("details");
-  // console.log(getJobFromLocalStorage);
-  // let message;
-  // if (getJobFromLocalStorage == null) {
-  //   message = <h2>please apply a job</h2>;
-  // }
+  function handleClick(event) {
+    setButtonValue(event.target.value);
+    let getJobFromLocalStorage = JSON.parse(localStorage.getItem("details"));
+    let name = getJobFromLocalStorage.filter(
+      (data) => data.poistion1 === buttonValue
+    );
+    setLocal(name);
+  }
 
-  const handleFilterSelection = (event) => {
-    setSelectedOption(event.target.value);
-    console.log(selectedOption);
-  };
+  function handleClickTow(event) {
+    setButtonValueTow(event.target.value);
+    let getJobFromLocalStorage = JSON.parse(localStorage.getItem("details"));
+    let nameTow = getJobFromLocalStorage.filter(
+      (data) => data.poistion1 === buttonValueTow
+    );
+    setLocal(nameTow);
+  }
 
   return (
     <div>
+      <img src="/public/banner.jpg" alt="" width={"100%"} height={"200px"} />
       <div className="textRightPadding">
-        <select
-          style={{ width: "120px", height: "25px", marginTop: "20px" }}
-          id="select-option"
-          value={selectedOption}
-          onChange={handleFilterSelection}
-        >
-          <optgroup style={{ fontSize: "17px" }} label="Filter By">
-            <option value="Remote" style={{ fontSize: "17px" }}>
-              Remote
-            </option>
-            <option value="onSite" style={{ fontSize: "17px" }}>
-              On Site
-            </option>
-          </optgroup>
-        </select>
+        <button value="remote" onClick={handleClick} className="btn">
+          remote
+        </button>
+        <button value="onSite" onClick={handleClickTow} className="btn">
+          onSite
+        </button>
       </div>
       {local && local.map((loca, idx) => <Loca key={idx} loca={loca}></Loca>)}
     </div>

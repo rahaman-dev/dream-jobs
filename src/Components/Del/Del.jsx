@@ -120,7 +120,7 @@ const Del = ({ del }) => {
             <b>ID :</b> {_id}
           </p>
           <button onClick={() => applyNow(del)} className="btn">
-            Apply The job
+            Apply Now
           </button>
         </div>
       </div>
