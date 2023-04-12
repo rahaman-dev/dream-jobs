@@ -43,35 +43,62 @@ const Menu = () => {
   // </svg>;
 
   return (
-    <nav className="menu">
-      <div className="menu__logo">
+    // <nav className="menu">
+    //   <div className="menu__logo">
+    //     <Link to="/">
+    //       <h2>Dream Jobs</h2>
+    //     </Link>
+    //   </div>
+    //   <button className="menu__toggle" onClick={toggleMenu}>
+    //     {isOpen ? "X " : "menu"}
+    //   </button>
+
+    //   <div className="">
+    //     <ul className={`menu__list ${isOpen ? "menu__list--open" : ""}`}>
+    //       <li className="menu__item">
+    //         <ActiveLink to="/">Home</ActiveLink>
+    //       </li>
+    //       <li className="menu__item">
+    //         <ActiveLink to="statisics">Statistics</ActiveLink>
+    //       </li>
+    //       <li className="menu__item">
+    //         {" "}
+    //         <ActiveLink to="appliedjobs">Applied Jobs</ActiveLink>
+    //       </li>
+    //       <li className="menu__item">
+    //         {" "}
+    //         <ActiveLink to="blog">Blog</ActiveLink>
+    //       </li>
+    //     </ul>
+    //   </div>
+    //   <div className="btnMenu">
+    //     <button>Star Applying</button>
+    //   </div>
+    // </nav>
+    <nav class="menu">
+      <div class="menu__logo">
         <Link to="/">
           <h2>Dream Jobs</h2>
         </Link>
       </div>
-      <button className="menu__toggle" onClick={toggleMenu}>
+      <button class="menu__toggle" onClick={toggleMenu}>
         {isOpen ? "X " : "menu"}
       </button>
-
-      <div className="">
-        <ul className={`menu__list ${isOpen ? "menu__list--open" : ""}`}>
-          <li className="menu__item">
-            <ActiveLink to="/">Home</ActiveLink>
-          </li>
-          <li className="menu__item">
-            <ActiveLink to="statisics">Statistics</ActiveLink>
-          </li>
-          <li className="menu__item">
-            {" "}
-            <ActiveLink to="appliedjobs">Applied Jobs</ActiveLink>
-          </li>
-          <li className="menu__item">
-            {" "}
-            <ActiveLink to="blog">Blog</ActiveLink>
-          </li>
-        </ul>
-      </div>
-      <div className="btnMenu">
+      <ul class={`menu__list ${isOpen ? "menu__list--open" : ""}`}>
+        <li class="menu__item">
+          <ActiveLink to="/">Home</ActiveLink>
+        </li>
+        <li class="menu__item">
+          <ActiveLink to="statisics">Statistics</ActiveLink>
+        </li>
+        <li class="menu__item">
+          <ActiveLink to="appliedjobs">Applied Jobs</ActiveLink>
+        </li>
+        <li class="menu__item">
+          <ActiveLink to="blog">Blog</ActiveLink>
+        </li>
+      </ul>
+      <div class="btnMenu">
         <button>Star Applying</button>
       </div>
     </nav>

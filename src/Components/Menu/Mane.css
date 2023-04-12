@@ -34,11 +34,13 @@
 .menu__item {
   margin-left: 2rem;
 }
+
 ul li a {
   text-decoration: none;
   font-size: 20px;
   padding: 0 20px;
 }
+
 .btnMenu button {
   font-size: 20px;
   padding: 10px;
@@ -48,26 +50,32 @@ ul li a {
 
 @media screen and (max-width: 768px) {
   .menu__logo {
-    order: 2;
+    order: 1;
     font-size: 20px;
   }
 
   .menu__toggle {
     display: block;
+    position: relative;
   }
 
   .menu__list {
     display: none;
-    order: 1;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
+    z-index: 1;
     padding: 1rem;
-    background-color: #52d7ff65;
+    background-color: #f700ff;
+    position: absolute;
+    top: 75px;
+    right: 300px;
   }
+
   .btnMenu {
-    order: 3;
+    order: 4;
     font-size: 15px;
   }
+
   .menu__item {
     margin: 1rem 0;
   }
