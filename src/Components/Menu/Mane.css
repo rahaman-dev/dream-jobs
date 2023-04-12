@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #f0f0f0;
+  background-color: #52d7ff65;
 }
 
 .menu__logo {
@@ -50,7 +50,7 @@ ul li a {
     display: none;
   }
   .menu {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .menu__toggle {
@@ -60,10 +60,9 @@ ul li a {
   .menu__list {
     display: none;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     padding: 1rem;
-    background-color: #f0f0f0;
+    background-color: #52d7ff65;
   }
 
   .menu__item {

@@ -1,6 +1,17 @@
 .textRightPadding {
   text-align: right;
   padding: 0 100px;
+  margin-top: 20px;
+}
+
+.imagOverly {
+  text-align: center;
+  padding: 130px 0px;
+  width: 100% !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background: linear-gradient(0deg, rgba(26, 26, 26, 0.86), rgba(0, 0, 0, 0.86)),
+    url(https://i.ibb.co/z2Rkn8s/banner.jpg);
 }
 
 @media only screen and (max-width: 900px) {

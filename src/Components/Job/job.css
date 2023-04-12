@@ -10,3 +10,8 @@
   gap: 20px;
   margin: 10px 0;
 }
+@media only screen and (max-width: 900px) {
+  .containerJob {
+    margin-left: 52px;
+  }
+}

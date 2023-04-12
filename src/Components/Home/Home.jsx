@@ -27,7 +27,7 @@ const Home = () => {
           <img src="sonod.jpg" alt="" className="imagesHome" />
         </div>
       </div>
-      <div style={{ margin: "50px 0" }}>
+      <div style={{ margin: "50px 0" }} className="margintttierhhidf">
         <h1 style={{ textAlign: "center", fontSize: "50px" }}>
           Job Category List
         </h1>

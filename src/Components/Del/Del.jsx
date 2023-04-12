@@ -119,7 +119,11 @@ const Del = ({ del }) => {
           <p>
             <b>ID :</b> {_id}
           </p>
-          <button onClick={() => applyNow(del)} className="btn">
+          <button
+            onClick={() => applyNow(del)}
+            className="btn"
+            style={{ backgroundColor: "#9B9BEF" }}
+          >
             Apply Now
           </button>
         </div>

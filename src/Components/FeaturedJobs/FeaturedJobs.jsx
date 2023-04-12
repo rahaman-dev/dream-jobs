@@ -18,7 +18,7 @@ const FeaturedJobs = () => {
   };
 
   return (
-    <div style={{ margin: "50px 0" }}>
+    <div style={{ margin: "50px 0" }} className="margintttierhhidf">
       <h2 style={{ textAlign: "center", fontSize: "40px" }}>Featured Jobs</h2>
       <p style={{ textAlign: "center", fontSize: "20px" }}>
         Explore thousands of job opportunities with all the information you
@@ -30,8 +30,12 @@ const FeaturedJobs = () => {
         ))}
       </div>
       {visibleJobs < jobs.length && (
-        <div style={{ textAlign: "center" }}>
-          <button onClick={loadMore} className="btn center">
+        <div style={{ textAlign: "center", marginTop: "20px" }}>
+          <button
+            onClick={loadMore}
+            className="btn"
+            style={{ backgroundColor: "#9B9BEF" }}
+          >
             see all jobs
           </button>
         </div>

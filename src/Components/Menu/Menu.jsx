@@ -51,7 +51,6 @@ const Menu = () => {
       </div>
 
       <button className="menu__toggle" onClick={toggleMenu}>
-        {/* {isOpen ? "Close" : "Menu"} */}
         {isOpen ? "X" : "menu"}
       </button>
       <div className="">

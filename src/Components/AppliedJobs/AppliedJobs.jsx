@@ -28,7 +28,9 @@ const AppliedJobs = () => {
 
   return (
     <div>
-      <img src="banner.jpg" alt="" width={"100%"} height={"200px"} />
+      {/* <img src="banner.jpg" alt="" width={"100%"} height={"200px"} className="imagOverly" /> */}
+      <div className="imagOverly"></div>
+
       <div className="textRightPadding">
         <select onChange={handleTypeChange} defaultValue="all">
           <option value="all">All Jobs</option>
