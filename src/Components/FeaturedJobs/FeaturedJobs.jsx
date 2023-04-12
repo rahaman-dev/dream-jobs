@@ -32,7 +32,7 @@ const FeaturedJobs = () => {
       {visibleJobs < jobs.length && (
         <div style={{ textAlign: "center" }}>
           <button onClick={loadMore} className="btn center">
-            See More
+            see all jobs
           </button>
         </div>
       )}

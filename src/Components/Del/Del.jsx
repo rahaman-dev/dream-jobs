@@ -29,12 +29,12 @@ const Del = ({ del }) => {
       updatedDetails = [...priviusDetails, del];
       localStorage.setItem("details", JSON.stringify(updatedDetails));
       setDetails(updatedDetails);
-      toast("Wow fine! & go to Applied Jobs page");
+      toast("Wow fine! Thanks for apply the job");
     } else {
       updatedDetails = [del];
       localStorage.setItem("details", JSON.stringify(updatedDetails));
       setDetails(updatedDetails);
-      toast("Wow fine! & go to Applied Jobs page");
+      toast("Wow fine! Thanks for apply the job");
     }
   };
 

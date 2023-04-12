@@ -14,7 +14,7 @@ const Job = ({ job }) => {
   } = job;
   return (
     <div className="containerJob">
-      <img src={companyLogo} alt="" />
+      <img src={companyLogo} alt="" width={"200px"} height={"70px"} />
       <h2>{jobTitle}</h2>
       <h4 style={{ marginBottom: "20px" }}>{companyName}</h4>
       <span
