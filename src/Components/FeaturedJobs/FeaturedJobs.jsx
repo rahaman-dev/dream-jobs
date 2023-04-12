@@ -5,21 +5,16 @@ import "./FeaturedJobs.css";
 
 const FeaturedJobs = () => {
   const [jobs, setJobs] = useState([]);
-  const [slices, setSlices] = useState(false);
+  const [visibleJobs, setVisibleJobs] = useState(4);
+
   useEffect(() => {
     fetch("/job.json")
       .then((res) => res.json())
       .then((data) => setJobs(data));
   }, []);
 
-  const handleSeeMoreBtn = () => {
-    console.log("clicked");
-    <div>
-      {jobs.slice(4, 15).map((job, idx) => (
-        <Job key={idx} job={job}></Job>
-      ))}
-    </div>;
-    setSlices(true);
+  const loadMore = () => {
+    setVisibleJobs(jobs.length);
   };
 
   return (
@@ -30,15 +25,17 @@ const FeaturedJobs = () => {
         need. Its your future
       </p>
       <div className="gird">
-        {jobs.slice(0, 4).map((job, idx) => (
+        {jobs.slice(0, visibleJobs).map((job, idx) => (
           <Job key={idx} job={job}></Job>
         ))}
       </div>
-      <div style={{ textAlign: "center" }}>
-        <button onClick={() => handleSeeMoreBtn(jobs)} className="btn center">
-          See More
-        </button>
-      </div>
+      {visibleJobs < jobs.length && (
+        <div style={{ textAlign: "center" }}>
+          <button onClick={loadMore} className="btn center">
+            See More
+          </button>
+        </div>
+      )}
     </div>
   );
 };

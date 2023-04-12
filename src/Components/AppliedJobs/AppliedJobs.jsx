@@ -34,7 +34,7 @@ const AppliedJobs = () => {
 
   return (
     <div>
-      <img src="/public/banner.jpg" alt="" width={"100%"} height={"200px"} />
+      <img src="banner.jpg" alt="" width={"100%"} height={"200px"} />
       <div className="textRightPadding">
         <button value="remote" onClick={handleClick} className="btn">
           remote
